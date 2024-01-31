@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Text Preprocessing" description="The first step in text mining is preprocessing, which defines the core units of the analysis - tokens.&#10;&#10;This workflow demonstrates how to preprocess the data, tokenize it, normalize it and filter  the unnecessary parts. Results of preprocessing can be observed in an  interactive Word Cloud visualization.">
+	<nodes>
+		<node id="0" name="Corpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Corpus" position="(126.0, 159.0)" />
+		<node id="1" name="Corpus Viewer" qualified_name="orangecontrib.text.widgets.owcorpusviewer.OWCorpusViewer" project_name="Orange3-Text" version="" title="Corpus Viewer" position="(280.0, 115.0)" />
+		<node id="2" name="Word Cloud" qualified_name="orangecontrib.text.widgets.owwordcloud.OWWordCloud" project_name="Orange3-Text" version="" title="Word Cloud" position="(397.0, 198.0)" />
+		<node id="3" name="Preprocess Text" qualified_name="orangecontrib.text.widgets.owpreprocess.OWPreprocess" project_name="Orange3-Text" version="" title="Preprocess Text" position="(275.0, 198.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="1" source_node_id="0" sink_node_id="3" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="2" source_node_id="3" sink_node_id="2" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVDQYAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojBhn
+cmltbS10YWxlcy1zZWxlY3RlZC50YWKUjBFib29rLWV4Y2VycHRzLnRhYpSMGGVsZWN0aW9uLXR3
+ZWV0cy0yMDE2LnRhYpSMF2ZyaWVuZHMtdHJhbnNjcmlwdHMudGFilIwMYW5kZXJzZW4udGFilGWM
+E3NhdmVkV2lkZ2V0R2VvbWV0cnmUQzIB2dDLAAIAAAAAAaoAAAC0AAAD4QAAAnwAAAGqAAAAygAA
+A+EAAAJ8AAAAAAAAAAAFoJSMC19fdmVyc2lvbl9flEsBjBBjb250ZXh0X3NldHRpbmdzlF2UKIwV
+b3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwIbGFu
+Z3VhZ2WUjAdFbmdsaXNolEr+////hpSMDnRpdGxlX3ZhcmlhYmxllIwFVGl0bGWUS2eGlIwKdXNl
+ZF9hdHRyc5RdlIwHQ29udGVudJRLZ4aUYUr9////hpRoC0sBdYwKYXR0cmlidXRlc5R9lIwJQVRV
+IFRvcGljlEsBc4wFbWV0YXOUfZQoaBlLA4wIQWJzdHJhY3SUSwOMB0NvbnRlbnSUSwOMDUFUVSBO
+dW1lcmljYWyUSwOMCEFUVSBUeXBllEsBdYwOZG9jdW1lbnRzX2hhc2iUihC1tu659YPsR8bsb3F2
+Zhc7aBWMAmVulHViaBApgZR9lChoE32UKIwKdXNlZF9hdHRyc5RdlIwUT3JhbmdlLmRhdGEudmFy
+aWFibGWUjA1tYWtlX3ZhcmlhYmxllJOUaDCMDlN0cmluZ1ZhcmlhYmxllJOUTmgdh5RSlH2UKIwF
+X25hbWWUaB2MDl9jb21wdXRlX3ZhbHVllE6MC3Vua25vd25fc3RylI+UKIwAlEd/+AAAAAAAAIwD
+bmFulIwBP5SMAS6UjAJOQZSMAX6UTpCMD3NvdXJjZV92YXJpYWJsZZROjAZzcGFyc2WUiWggfZSM
+B2luY2x1ZGWUjARUcnVllHOMBm1hc3RlcpRoNowHX2NvbG9yc5ROjARuYW1llGgddWJhaAtLAXVo
+IyiMBVRpdGxllEsDhpSMCEFic3RyYWN0lEsDhpSMB0NvbnRlbnSUSwOGlIwNQVRVIE51bWVyaWNh
+bJRLA4aUjAhBVFUgVHlwZZRdlCiMEERvbWVzdGljIEFuaW1hbHOUjBlPdGhlciBBbmltYWxzIGFu
+ZCBPYmplY3RzlIwfT3RoZXIgVGFsZXMgb2YgdGhlIFN1cGVybmF0dXJhbJSMGFN1cGVybmF0dXJh
+bCBBZHZlcnNhcmllc5SMFFN1cGVybmF0dXJhbCBIZWxwZXJzlIwgU3VwZXJuYXR1cmFsIFBvd2Vy
+cyBvciBLbm93bGVkZ2WUjBJTdXBlcm5hdHVyYWwgVGFza3OUjCNTdXBlcm5hdHVyYWwgb3IgRW5j
+aGFudGVkIFJlbGF0aXZlc5SMIFdpbGQgQW5pbWFsIGFuZCBEb21lc3RpYyBBbmltYWxzlIwMV2ls
+ZCBBbmltYWxzlIwXV2lsZCBBbmltYWxzIGFuZCBIdW1hbnOUZYaUdJRoICmMBHRpbWWUR0HWWolO
+LCaFjA5vcmRlcmVkX2RvbWFpbpRdlIwJQVRVIFRvcGljlEsBhpRhjApjbGFzc192YXJzlGhkXZQo
+jAxBbmltYWwgVGFsZXOUjA5UYWxlcyBvZiBNYWdpY5RlhpSFlHViaBApgZR9lChoE32UKGguXZRo
+Mmg0TowEVGV4dJSHlFKUfZQoaDhocGg5Tmg6j5QoR3/4AAAAAAAAaDyMA25hbpRoPmg/jAJOQZRo
+QU6QaEJOaEOJaCB9lIwHaW5jbHVkZZSMBFRydWWUc2hITmhHaHJoSWhwdWJhaAtLAXVoI4wEVGV4
+dJRLA4aUhZRoICloYUdB1lqJTTjxSmhiXZSMCENhdGVnb3J5lEsBhpRhaGZofl2UKIwFYWR1bHSU
+jAhjaGlsZHJlbpRlhpSFlHViZXUu
+</properties>
+		<properties node_id="1" format="pickle">gASVGgIAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAB4gAAAEpAAALRwAAA5wAAAeIAAABRQAAC0cAAAOc
+AAAAAgAAAAAHgAAAB4gAAAFFAAALRwAAA5yUjBJzZWxlY3RlZF9kb2N1bWVudHOUj5QoSwCQjAtz
+aG93X3Rva2Vuc5SJjAtfX3ZlcnNpb25fX5RLAowQY29udGV4dF9zZXR0aW5nc5RdlIwVb3Jhbmdl
+d2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwQZGlzcGxheV9m
+ZWF0dXJlc5RdlCiMCUFUVSBUb3BpY5RLZYaUjAVUaXRsZZRLZ4aUjAhBYnN0cmFjdJRLZ4aUjAdD
+b250ZW50lEtnhpSMDUFUVSBOdW1lcmljYWyUS2eGlIwIQVRVIFR5cGWUS2WGlGVK/f///4aUjA1y
+ZWdleHBfZmlsdGVylIwAlEr+////hpSMD3NlYXJjaF9mZWF0dXJlc5RdlChoFEtlhpRoFktnhpRo
+GEtnhpRoGktnhpRoHEtnhpRoHktlhpRlSv3///+GlGgISwJ1jAphdHRyaWJ1dGVzlH2UaBRLAXOM
+BW1ldGFzlH2UKGgWSwNoGEsDaBpLA2gcSwNoHksBdXViYXUu
+</properties>
+		<properties node_id="2" format="pickle">gASVtwAAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAEoAAAArAAABMAAAAMfAAABKAAAAMgAAATAAAADHwAAAAAAAAAABegAAAEo
+AAAAyAAABMAAAAMflIwOc2VsZWN0ZWRfd29yZHOUj5SMC3dvcmRzX2NvbG9ylIiMCndvcmRzX3Rp
+bHSUSwKMC19fdmVyc2lvbl9flEsBdS4=
+</properties>
+		<properties node_id="3" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x08\x05\x00\x00\x01\x83\x00\x00\x0bQ\x00\x00\x03\x9e\x00\x00\x08\x05\x00\x00\x01\x9f\x00\x00\x0bQ\x00\x00\x03\x9e\x00\x00\x00\x02\x00\x00\x00\x00\x07\x80\x00\x00\x08\x05\x00\x00\x01\x9f\x00\x00\x0bQ\x00\x00\x03\x9e', 'storedsettings': {'name': '', 'preprocessors': [('preprocess.transform', {'methods': [0]}), ('preprocess.tokenize', {'method': 3, 'pattern': '\\w+'}), ('preprocess.filter', {'language': 'English', 'lx_list': [], 'lx_path': None, 'methods': [0], 'n_tokens': 100, 'pattern': '\\.|,|:|;|!|\\?|\\(|\\)|\\||\\+|\'|"|‘|’|“|”|\'|\\’|…|\\-|–|—|\\$|&amp;|\\*|&gt;|&lt;', 'rel_end': 0.9, 'rel_start': 0.1, 'sw_list': [], 'sw_path': None})]}, '__version__': 3}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

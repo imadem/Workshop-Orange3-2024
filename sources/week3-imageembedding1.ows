@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Import Images" qualified_name="orangecontrib.imageanalytics.widgets.owimageimport.OWImportImages" project_name="Orange3-ImageAnalytics" version="" title="Import Images" position="(119.0, 160.0)" />
+		<node id="1" name="Image Embedding" qualified_name="orangecontrib.imageanalytics.widgets.owimageembedding.OWImageEmbedding" project_name="Orange3-ImageAnalytics" version="" title="Image Embedding" position="(300, 150)" />
+		<node id="2" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(450, 150)" />
+		<node id="3" name="Image Viewer" qualified_name="orangecontrib.imageanalytics.widgets.owimageviewer.OWImageViewer" project_name="Orange3-ImageAnalytics" version="" title="Image Viewer" position="(300.0, 274.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Images" enabled="true" source_channel_id="data" sink_channel_id="images" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Embeddings" sink_channel="Data" enabled="true" source_channel_id="embeddings" sink_channel_id="data" />
+		<link id="2" source_node_id="0" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVRwEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfcGF0aHOUXZSMHm9y
+YW5nZXdpZGdldC51dGlscy5maWxlZGlhbG9nc5SMClJlY2VudFBhdGiUk5QpgZR9lCiMB2Fic3Bh
+dGiUjDEvVXNlcnMvaW1hZGVtdXJ3YW50YXJhL0Rvd25sb2Fkcy9kb21lc3RpYy1hbmltYWxzlIwG
+cHJlZml4lE6MB3JlbHBhdGiUTowFdGl0bGWUjACUjAVzaGVldJRoDowLZmlsZV9mb3JtYXSUTnVi
+YYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAACHgAAAWIAAAO1AAACKgAAAh4AAAF+
+AAADtQAAAioAAAAAAgAAAAXoAAACHgAAAX4AAAO1AAACKpSMC19fdmVyc2lvbl9flEsBdS4=
+</properties>
+		<properties node_id="1" format="literal">{'_auto_apply': True, 'cb_embedder_current_id': 0, 'cb_image_attr_current_id': 0, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02G\x00\x00\x01?\x00\x00\x03\x8c\x00\x00\x02K\x00\x00\x02G\x00\x00\x01[\x00\x00\x03\x8c\x00\x00\x02K\x00\x00\x00\x00\x02\x00\x00\x00\x05\xe8\x00\x00\x02G\x00\x00\x01[\x00\x00\x03\x8c\x00\x00\x02K', '__version__': 1}</properties>
+		<properties node_id="2" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b"\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x01\x00\x00\x00'\x00\x00\x04\x14\x00\x00\x028\x00\x00\x00\x01\x00\x00\x00C\x00\x00\x04\x14\x00\x00\x028\x00\x00\x00\x00\x00\x00\x00\x00\x05\xe8\x00\x00\x00\x01\x00\x00\x00C\x00\x00\x04\x14\x00\x00\x028", 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="3" format="pickle">gASVhwEAAAAAAAB9lCiMCmF1dG9Db21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiMCWltYWdl
+U2l6ZZRLZIwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAABWgAAAIgAAAR5AAAC+wAA
+AVoAAACkAAAEeQAAAvsAAAAAAAAAAAXoAAABWgAAAKQAAAR5AAAC+5SMC19fdmVyc2lvbl9flEsB
+jBBjb250ZXh0X3NldHRpbmdzlF2UjBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOU
+KYGUfZQojAZ2YWx1ZXOUfZQojAppbWFnZV9hdHRylIwFaW1hZ2WUS2eGlIwOc2VsZWN0ZWRfaXRl
+bXOUj5RK/v///4aUjAp0aXRsZV9hdHRylIwKaW1hZ2UgbmFtZZRLZ4aUaAZLAXWMCmF0dHJpYnV0
+ZXOUfZSMBW1ldGFzlH2UKGgXSwNoEUsDjARzaXpllEsCjAV3aWR0aJRLAowGaGVpZ2h0lEsCdXVi
+YXUu
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

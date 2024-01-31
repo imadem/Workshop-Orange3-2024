@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Datasets" qualified_name="Orange.widgets.data.owdatasets.OWDataSets" project_name="Orange3" version="" title="Datasets" position="(166.0, 173.0)" />
+		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(498.0, 161.0)" />
+		<node id="2" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Select Rows" position="(322.0, 162.0)" />
+		<node id="3" name="Feature Statistics" qualified_name="Orange.widgets.data.owfeaturestatistics.OWFeatureStatistics" project_name="Orange3" version="" title="Feature Statistics" position="(369.0, 292.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="2" sink_node_id="1" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="2" source_node_id="0" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations>
+		<text id="0" type="text/plain" rect="(441.0, 38.0, 150.0, 69.0)" font-family=".AppleSystemUIFont" font-size="16">Only selected data will influence our decision</text>
+		<arrow id="1" start="(564.0, 116.0)" end="(532.0, 153.0)" fill="#C1272D" />
+		<text id="2" type="text/plain" rect="(504.0, 294.0, 186.0, 80.0)" font-family=".AppleSystemUIFont" font-size="16">a quick way to inspect and find interesting features in a given data set.</text>
+		<arrow id="3" start="(492.0, 307.0)" end="(411.0, 301.0)" fill="#C1272D" />
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'controlAreaVisible': True, 'header_state': b'\x00\x00\x00\xff\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03F\x00\x00\x00\x07\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\xff\xff\xff\xff\x00\x00\x00\x81\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00$\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01@\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00[\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00Z\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00J\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x7f\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03\xe8\x00\x00\x00\x00d\x00\x00\x00\x00', 'language': 'English', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfa~\x00\x00\x00\xb5\xff\xff\xfd\xe0\x00\x00\x02\x7f\xff\xff\xfa~\x00\x00\x00\xd1\xff\xff\xfd\xe0\x00\x00\x02\x7f\x00\x00\x00\x02\x00\x00\x00\x00\x07\x80\xff\xff\xfa~\x00\x00\x00\xd1\xff\xff\xfd\xe0\x00\x00\x02\x7f', 'selected_id': 'core/telecom-customer-churn.xlsx', 'splitter_state': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x01,\x00\x00\x00\xc8\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', '__version__': 1}</properties>
+		<properties node_id="1" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xfa\xb7\x00\x00\x00`\xff\xff\xff{\x00\x00\x03\x00\xff\xff\xfa\xb7\x00\x00\x00|\xff\xff\xff{\x00\x00\x03\x00\x00\x00\x00\x02\x00\x00\x00\x00\x07\x80\xff\xff\xfa\xb7\x00\x00\x00|\xff\xff\xff{\x00\x00\x03\x00', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASVzQIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
+0MsAAwAA///6iQAAALr///0IAAACtf//+okAAADW///9CAAAArUAAAACAAAAAAeA///6iQAAANb/
+//0IAAACtZSMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
+dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
+c5R9lCiMCmNvbmRpdGlvbnOUXZQojA1QYXltZW50TWV0aG9klEsBSwBdlIwZQmFuayB0cmFuc2Zl
+ciAoYXV0b21hdGljKZRhdJRhaAhLAnWMCmF0dHJpYnV0ZXOUfZQojAZnZW5kZXKUSwGMDVNlbmlv
+ckNpdGl6ZW6USwGMB1BhcnRuZXKUSwGMCkRlcGVuZGVudHOUSwGMBnRlbnVyZZRLAowMUGhvbmVT
+ZXJ2aWNllEsBjA1NdWx0aXBsZUxpbmVzlEsBjA9JbnRlcm5ldFNlcnZpY2WUSwGMDk9ubGluZVNl
+Y3VyaXR5lEsBjAxPbmxpbmVCYWNrdXCUSwGMEERldmljZVByb3RlY3Rpb26USwGMC1RlY2hTdXBw
+b3J0lEsBjAtTdHJlYW1pbmdUVpRLAYwPU3RyZWFtaW5nTW92aWVzlEsBjAhDb250cmFjdJRLAYwQ
+UGFwZXJsZXNzQmlsbGluZ5RLAWgUSwGMDk1vbnRobHlDaGFyZ2VzlEsCjAxUb3RhbENoYXJnZXOU
+SwKMBUNodXJulEsBdYwFbWV0YXOUfZSMCmN1c3RvbWVySUSUSwNzdWJhdS4=
+</properties>
+		<properties node_id="3" format="pickle">gASVtAIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lImMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZl
+ZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAD///taAAABIf///0QAAAMn///7WgAAAT3///9EAAAD
+JwAAAAIAAAAAB4D///taAAABPf///0QAAAMnlIwHc29ydGluZ5RLAIwMUHlRdDYuUXRDb3JllIwM
+UXQuU29ydE9yZGVylJOUSwCFlFKUhpSMC19fdmVyc2lvbl9flEsCjBBjb250ZXh0X3NldHRpbmdz
+lF2UjBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQo
+jAljb2xvcl92YXKUjAVDaHVybpRLZYaUjA1zZWxlY3RlZF92YXJzlF2UaAxLAnWMCmF0dHJpYnV0
+ZXOUfZQojAZnZW5kZXKUSwGMDVNlbmlvckNpdGl6ZW6USwGMB1BhcnRuZXKUSwGMCkRlcGVuZGVu
+dHOUSwGMBnRlbnVyZZRLAowMUGhvbmVTZXJ2aWNllEsBjA1NdWx0aXBsZUxpbmVzlEsBjA9JbnRl
+cm5ldFNlcnZpY2WUSwGMDk9ubGluZVNlY3VyaXR5lEsBjAxPbmxpbmVCYWNrdXCUSwGMEERldmlj
+ZVByb3RlY3Rpb26USwGMC1RlY2hTdXBwb3J0lEsBjAtTdHJlYW1pbmdUVpRLAYwPU3RyZWFtaW5n
+TW92aWVzlEsBjAhDb250cmFjdJRLAYwQUGFwZXJsZXNzQmlsbGluZ5RLAYwNUGF5bWVudE1ldGhv
+ZJRLAYwOTW9udGhseUNoYXJnZXOUSwKMDFRvdGFsQ2hhcmdlc5RLAmgXSwF1jAVtZXRhc5R9lIwK
+Y3VzdG9tZXJJRJRLA3N1YmF1Lg==
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
