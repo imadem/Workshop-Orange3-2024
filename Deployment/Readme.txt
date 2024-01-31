@@ -1,0 +1,1 @@
+Data yang dipergunakan harus mempergunakan file dan memiliki target
